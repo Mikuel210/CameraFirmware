@@ -7,13 +7,13 @@ class Fusion {
 public:
   // Pixels with saturation below this threshold are classified as WHITE
   // regardless of hue or value (catches both white and black inputs).
-  static constexpr float SAT_THRESHOLD = 0.25f;
+  static constexpr float SAT_THRESHOLD = 0.2f;
 
   // Reference hues (degrees, 0–360) for each chromatic color,
   // derived from the calibration samples in Fusion.cpp.
-  static constexpr float HUE_YELLOW = 57.0f;
-  static constexpr float HUE_GREEN  = 146.0f;
-  static constexpr float HUE_BLUE   = 216.0f;
+  static constexpr float HUE_YELLOW = 60.0f;
+  static constexpr float HUE_GREEN  = 125.0f;
+  static constexpr float HUE_BLUE   = 220.0f;
 
   static Color rgbToColor(ColorData cd) {
     // --- RGB → HSV ---

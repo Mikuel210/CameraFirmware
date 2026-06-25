@@ -20,10 +20,14 @@ struct PixelPos {
   int y;
 };
 
+
+#define ANGLE 7
+
 static const PixelPos COLOR_SAMPLE_POINTS[12] = {
-  { 50, 50 }, { 125, 50 }, { 200, 50 }, { 275, 50 },
-  { 50, 125 }, { 125, 125 }, { 200, 125 }, { 275, 125 },
-  { 50, 200 }, { 125, 200 }, { 200, 200 }, { 275, 200 }
+  { 87 + ANGLE * 0, 200 }, { 162, 200 }, { 237 - ANGLE * 0, 200 },
+  { 87 + ANGLE * 1, 150 }, { 162, 150 }, { 237 - ANGLE * 1, 150 },
+  { 87 + ANGLE * 2, 100 }, { 162, 100 }, { 237 - ANGLE * 2, 100 },
+  { 87 + ANGLE * 3,  50 }, { 162,  50 }, { 237 - ANGLE * 3,  50 },
 };
 
 // Intensidad del LED flash (0-255) al tomar la foto en /colors.
